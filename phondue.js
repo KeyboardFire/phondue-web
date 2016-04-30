@@ -23,7 +23,7 @@
             [].slice.call(document.getElementsByTagName('button'))
                     .forEach(function(btn) {
                 btn.addEventListener('click', function() {
-                    inputBox.value += btn.innerText;
+                    inputBox.value += btn.textContent;
                     inputBox.focus();
                 });
             });
